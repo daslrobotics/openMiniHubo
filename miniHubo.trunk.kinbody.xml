@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Right arm kinematic tree -->
+<!-- The torso is defined in multiple places, weventually need to find a good structure to join arms-->
+<KinBody name="Trunk" makejoinedlinksadjacent="true">
+<modelsdir>models</modelsdir>
+    <Body name="chest" type="dynamic">
+        <!--Geom type="box" render = "false">
+		       <Extents>0.1297 0.10635	0.056</Extents> 
+		</Geom--> 
+        <Geom modifiable="false" type="trimesh">
+            <data>miniHubo/chest_cog_shrinkwrap_1.wrl 1</data>
+            <render>miniHubo/chest_cog_shrinkwrap_1.wrl 1</render> 
+        </Geom> 
+        <Mass type="box"> 
+            <total>0.366</total>
+            <inertia>0.377268	0	0	0	0.571481	-0.013663	0	-0.013663	0.761391</inertia>
+        </Mass>
+    </Body>
+    <Body name="waist" type="dynamic">
+    	<offsetfrom>chest</offsetfrom>
+    	<Translation>-0.000000	-0.076600	-0.016550</Translation>
+    	<!--Geom type="box" render = "false">
+		       <Extents>0.05585	0.1114	0.0631</Extents> 
+		</Geom-->
+        <Geom  modifiable="false" type="trimesh">
+            <data>miniHubo/waist_cog_shrinkwrap_1.wrl 1</data>
+            <render>miniHubo/waist_cog_shrinkwrap_1.wrl 1</render>
+        </Geom> 
+        <Mass type="box"> 
+            <total>0.285</total>
+            <inertia>0.106898	0.000001	0.000001	0.000001	0.299527	0.000634	0.000001	0.000634	0.273885</inertia>
+        </Mass>
+    </Body>
+
+    <Joint name="ty" type="hinge" circular="true">
+        <Body>chest</Body> 
+        <Body>waist</Body> 
+        <offsetfrom>waist</offsetfrom> 	
+        <Anchor> 0.000000	0.048675	0.000000</Anchor>
+        <axis>0 1 0</axis>
+    </Joint>
+</KinBody>
