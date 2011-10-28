@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- right leg kinematic tree -->
-<KinBody name = "rightLeg" makejoinedlinksadjacent="true">
+<KinBody name = "rightLeg" >
 <modelsdir>models</modelsdir>
 	<Body name="hipDummyRight" type="dynamic">
 	</Body>
@@ -9,9 +9,9 @@
 		<offsetfrom>hipDummyRight</offsetfrom>
 		<Translation>-0.000000	-0.076600	-0.016550</Translation>
 		<Translation>0.037900	-0.042075	0.000800</Translation>
-		<!--Geom type="box" render = "false">
-		       <Extents>0.039	0.025	0.0865</Extents>
-		</Geom--> 
+		<Geom type="box" render = "false">
+		       <Extents>0.0125	0.0195	0.04325</Extents>
+		</Geom> 
 		<Geom modifiable="false" type="trimesh">
 			<data>../models/miniHubo/hip_yaw_cog_shrinkwrap_1.wrl 1</data>
 			<render>../models/miniHubo/hip_yaw_cog_shrinkwrap_1.wrl 1</render> 
@@ -21,6 +21,7 @@
 			<inertia>0.018457	0	0	0	0.015826	-0.000032	0	-0.000032	0.004771</inertia> 
 		</Mass>
 	</Body>
+	<adjacent>hipDummtRight rlhy</adjacent>
 	<Joint name="rhy" type="hinge" circular="true">
 		    <Body>hipDummyRight</Body> 
 		    <Body>rlhy</Body> 
@@ -31,9 +32,9 @@
 	<Body name="rlhpr">
 		<offsetfrom>rlhy</offsetfrom>
 		<Translation>-0.001600	-0.025800	-0.001650</Translation>
-		<!--Geom type="box" render = "false">
-		       <Extents>0.0506	0.0485	0.0905</Extents>
-		</Geom--> 
+		<Geom type="box" render = "false">
+		       <Extents>0.02425	0.0253	0.04525</Extents>
+		</Geom> 
 		<Geom modifiable="false" type="trimesh">
 			<data>../models/miniHubo/hippr_rt_cog_shrinkwrap_1.wrl 1</data>
 			<render>../models/miniHubo/hippr_rt_cog_shrinkwrap_1.wrl 1</render> 
@@ -43,6 +44,7 @@
 			<inertia>0.103932	-0.000487	-0.000349	-0.000487	0.091297	-0.003423	-0.000349	-0.003423	0.043876</inertia> 
 		</Mass>
 	</Body>
+	<adjacent>rlhy rlhpr</adjacent>
 	<Joint name="rhr" type="hinge" circular="true">
 		    <Body>rlhy</Body> 
 		    <Body>rlhpr</Body> 
@@ -53,9 +55,9 @@
 	<Body name="rlt">
 		<offsetfrom>rlhpr</offsetfrom>
 		<Translation>0.001600	-0.030700	0.009400</Translation>
-		<!--Geom type="box" render = "false">
-		       <Extents>0.102	0.044	0.048</Extents>
-		</Geom--> 
+		<Geom type="box" render = "false">
+		       <Extents>0.022	0.051	0.024</Extents>
+		</Geom> 
 		<Geom modifiable="false" type="trimesh">
 			<data>../models/miniHubo/thigh_cog_shrinkwrap_1.wrl 1</data>
 			<render>../models/miniHubo/thigh_cog_shrinkwrap_1.wrl 1</render> 
@@ -66,6 +68,7 @@
 
 		</Mass>
 	</Body>
+	<adjacent>rlhpr rlt</adjacent>
 	<Joint name="rhp" type="hinge" circular="true">
 		    <Body>rlhpr</Body> 
 		    <Body>rlt</Body> 
@@ -76,9 +79,9 @@
 	<Body name="rls">
 		<offsetfrom>rlt</offsetfrom>
 		<Translation>-0.001600	-0.083119	0.001769</Translation>
-		<!--Geom type="box" render = "false">
-		       <Extents>0.113837	0.0485	0.053538</Extents>
-		</Geom--> 
+		<Geom type="box" render = "false">
+		       <Extents>0.02425	0.0569185	0.026769</Extents>
+		</Geom> 
 		<Geom modifiable="false" type="trimesh">
 			<data>../models/miniHubo/shin_rt_cog_shrinkwrap_1.wrl 1</data>
 			<render>../models/miniHubo/shin_rt_cog_shrinkwrap_1.wrl 1</render> 
@@ -88,6 +91,7 @@
 			<inertia>0.160798	-0.005229	-0.000381	-0.005229	0.039507	0.002243	-0.000381	0.002243	0.159297</inertia> 
 		</Mass>
 	</Body>
+	<adjacent>rlt rls</adjacent>
 	<Joint name="rkn" type="hinge" circular="true">
 		    <Body>rlt</Body> 
 		    <Body>rls</Body> 
@@ -98,9 +102,9 @@
 	<Body name="rlapr">
 		<offsetfrom>rls</offsetfrom>
 		<Translation>0.000000	-0.035582	-0.011169</Translation>
-		<!--Geom type="box" render = "false">
-		       <Extents>0.0506	0.0485	0.0905</Extents>
-		</Geom--> 
+		<Geom type="box" render = "false">
+		       <Extents>0.02425	0.0253	0.04525</Extents>
+		</Geom> 
 		<Geom modifiable="false" type="trimesh">
 			<data>../models/miniHubo/anklepr_rt_cog_shrinkwrap_1.wrl 1</data>
 			<render>../models/miniHubo/anklepr_rt_cog_shrinkwrap_1.wrl 1</render> 
@@ -110,6 +114,7 @@
 			<inertia>0.103932	0.000487	-0.000349	0.000487	0.091297	0.003423	-0.000349	0.003423	0.043876</inertia> 
 		</Mass>
 	</Body>
+	<adjacent>rls rlapr</adjacent>
 	<Joint name="rap" type="hinge" circular="true">
 		    <Body>rls</Body> 
 		    <Body>rlapr</Body> 
@@ -120,9 +125,9 @@
 	<Body name="rlf">
 		<offsetfrom>rlapr</offsetfrom>
 		<Translation>0.001600	-0.026800	0.013400</Translation>
-		<!--Geom type="box" render = "false">
-		       <Extents>0.041	0.064	0.11</Extents>
-		</Geom--> 
+		<Geom type="box" render = "false">
+		       <Extents>0.032	0.0205	0.055</Extents>
+		</Geom> 
 		<Geom modifiable="false" type="trimesh">
 			<data>../models/miniHubo/foot_cog_shrinkwrap_1.wrl 1</data>
 			<render>../models/miniHubo/foot_cog_shrinkwrap_1.wrl 1</render> 
@@ -132,6 +137,7 @@
 			<inertia>0.068493	-0.000161	-0.000009	-0.000161	0.072762	-0.001749	-0.000009	-0.001749	0.033967</inertia>                
 		</Mass>
 	</Body>
+	<adjacent>rlapr rlf</adjacent>
 	<Joint name="rar" type="hinge" circular="true">
 	    <Body>rlapr</Body> 
 	    <Body>rlf</Body> 

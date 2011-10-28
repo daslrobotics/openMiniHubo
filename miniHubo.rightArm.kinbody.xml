@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- left arm kinematic tree -->
-<KinBody name = "rightArm" makejoinedlinksadjacent="true">
+<KinBody name = "rightArm" >
 <modelsdir>models</modelsdir>
     <Body name="Torso_dummy2" type="dynamic">
     </Body>
 	<Body name="ras">
         <offsetfrom>Torso_dummy2</offsetfrom>
         <Translation>0.076500	0.022625	0.000000</Translation>
-        <!--Geom type="box" render="false">
-        	<Extents>0.025	0.034	0.044</Extents>
-    	</Geom-->
+        <Geom type="box" render="false">
+        	<Extents>0.01700	0.01250	0.02200</Extents>
+    	</Geom>
         <Geom modifiable="false" type="trimesh">
             <data>miniHubo/shoulder_rt_cog_shrinkwrap_1.wrl 1</data>
             <render>miniHubo/shoulder_rt_cog_shrinkwrap_1.wrl 1</render> 
@@ -20,6 +20,7 @@
             <inertia>0.003225	0	0	0	0.004119	0	0	0	0.002129</inertia> 
         </Mass>
     </Body>
+    <adjacent>Torso_dumm2 ras</adjacent>
 	<Joint name="rsp" type="hinge" circular="true">
 	   <Body>Torso_dummy2</Body> 
 	   <Body>ras</Body> 
@@ -30,9 +31,9 @@
 	<Body name="rab">
 		<offsetfrom>ras</offsetfrom>
 		<Translation>0.010000	-0.037825	-0.007990</Translation>
-		<!--Geom type="box" render="false">
-        	<Extents>0.09965	0.0356	0.06125</Extents>
-    	</Geom-->
+		<Geom type="box" render="false">
+        	<Extents>0.01780	0.04983	0.03063</Extents>
+    	</Geom>
 		<Geom modifiable="false" type="trimesh">
 		    <data>miniHubo/bicep_cog_shrinkwrap_1.wrl 1</data>
 		    <render>miniHubo/bicep_cog_shrinkwrap_1.wrl 1</render> 
@@ -42,6 +43,7 @@
 		    <inertia>0.128338	0	0	0	0.034871	-0.018017	0	-0.018017	0.112464</inertia> 
 		</Mass>
 	</Body>
+	<adjacent>ras rab</adjacent>
 	<Joint name="rsr" type="hinge" circular="true">
 	   <Body>ras</Body> 
 	   <Body>rab</Body> 
@@ -52,9 +54,9 @@
 	<Body name="rae">
 		<offsetfrom>rab</offsetfrom>
 		<Translation>0.000000	-0.061475	0.007975</Translation>
-		<!--Geom type="box" render="false">
-        	<Extents>0.034	0.044	0.025</Extents>
-    	</Geom-->	
+		<Geom type="box" render="false">
+        	<Extents>0.02200	0.01700	0.01250</Extents>
+    	</Geom>	
 		<Geom modifiable="false" type="trimesh">
 		    <data>miniHubo/elbow_cog_shrinkwrap_1.wrl 1</data>
 		    <render>miniHubo/elbow_cog_shrinkwrap_1.wrl 1</render> 
@@ -64,6 +66,7 @@
 		    <inertia>0.002129	0	0	0	0.003225	0	0	0	0.004119</inertia> 
 		</Mass>
 	</Body>
+	<adjacent>rab rae</adjacent>
 	<Joint name="rsy" type="hinge" circular="true">
 	   <Body>rab</Body> 
 	   <Body>rae</Body> 
@@ -74,9 +77,9 @@
 	<Body name="raf">
 		<offsetfrom>rae</offsetfrom>
 		<Translation>-0.001600	-0.023300	0.000000</Translation>
-		<!--Geom type="box" render="false">
-        	<Extents>0.0506	0.0485	0.0356</Extents>
-    	</Geom-->		
+		<Geom type="box" render="false">
+        	<Extents>0.02425	0.02530	0.01780</Extents>
+    	</Geom>		
 		<Geom modifiable="false" type="trimesh">
 		    <data>miniHubo/forearm_rt_cog_shrinkwrap_1.wrl 1</data>
 		    <render>miniHubo/forearm_rt_cog_shrinkwrap_1.wrl 1</render> 
@@ -86,6 +89,7 @@
 		    <inertia>0.015576	0	0	0	0.011951	0	0	0	0.019327</inertia> 
 		</Mass>
 	</Body> 
+	<adjacent>rae raf</adjacent>
 	<Joint name="rep" type="hinge" circular="true">
 	   <Body>rae</Body> 
 	   <Body>raf</Body> 

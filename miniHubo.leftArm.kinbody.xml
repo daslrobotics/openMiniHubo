@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- left arm kinematic tree -->
-<KinBody name = "leftArm" makejoinedlinksadjacent="true">
+<KinBody name = "leftArm" >
 <modelsdir>models</modelsdir>
     <Body name="Torso_dummy1" type="dynamic">
     </Body>
     <Body name="las" type="dynamic">
         <offsetfrom>Torso_dummy1</offsetfrom>
         <Translation>-0.076500	0.022625	0.000000</Translation>        				
-        <!--Geom type="box" render = "false">
-               <Extents>0.025	0.034	0.044</Extents>
-        </Geom--> 
+        <Geom type="box" render = "false">
+               <Extents>0.01700	0.01250	0.02200</Extents>
+        </Geom> 
         <Geom  type="trimesh">
             <data>miniHubo/shoulder_lf_cog_shrinkwrap_1.wrl 1</data>
             <render>miniHubo/shoulder_lf_cog_shrinkwrap_1.wrl 1</render>
@@ -20,7 +20,7 @@
            <inertia>0.003225	0	0	0	0.004119	0	0	0	0.002129</inertia> 
         </Mass>
     </Body>
-    
+    <adjacent>Torso_dumm1 las </adjacent>
     <Joint name="lsp" type="hinge" circular="true">
         <Body>Torso_dummy1</Body> 
         <Body>las</Body> 
@@ -28,13 +28,12 @@
         <Anchor>0.017000	0.000000	0.000000</Anchor>
         <axis>-1 0 0 </axis>
     </Joint>
-    
     <Body name="lab" type="dynamic">
         <offsetfrom>las</offsetfrom>
         <Translation>-0.010000	-0.037825	-0.007990</Translation>
-       	<!--Geom type="box" render = "false">
-			<Extents>0.09965	0.0356	0.06125</Extents>
-        </Geom--> 
+       	<Geom type="box" render = "false">
+			<Extents>0.01780	0.04983	0.03063</Extents>
+        </Geom> 
         <Geom  type="trimesh">
 
             <data>miniHubo/bicep_cog_shrinkwrap_1.wrl 1</data>
@@ -46,7 +45,7 @@
             <inertia>0.128338	0	0	0	0.034871	-0.018017	0	-0.018017	0.112464</inertia> 
         </Mass>
     </Body>
-    
+    <adjacent>las lab</adjacent>
     <Joint name="lsr" type="hinge" circular="true">
         <Body>las</Body> 
         <Body>lab</Body> 
@@ -58,9 +57,9 @@
     <Body name="lae" type="dynamic">
         <offsetfrom>lab</offsetfrom>
         <Translation>0.000000	-0.061475	0.007975</Translation>
-        <!--Geom type="box" render = "false">
-			<Extents>0.034	0.044	0.025</Extents>
-        </Geom-->  
+        <Geom type="box" render = "false">
+			<Extents>0.02200	0.01700	0.01250</Extents>
+        </Geom>  
         <Geom  type="trimesh">
 
             <data>miniHubo/elbow_cog_shrinkwrap_1.wrl 1</data>
@@ -72,7 +71,7 @@
             <inertia>0.002129	0	0	0	0.003225	0	0	0	0.004119</inertia> 
         </Mass>
     </Body>
-    
+    <adjacent>lab lae</adjacent>
     <Joint name="lsy" type="hinge" circular="true">
         <Body>lab</Body> 
         <Body>lae</Body> 
@@ -84,9 +83,9 @@
     <Body name="laf" type="dynamic">
         <offsetfrom>lae</offsetfrom>
         <Translation>0.001600	-0.023300	0.000000</Translation>
-        <!--Geom type="box" render = "false">
-			<Extents>0.0506	0.0485	0.0356</Extents>
-        </Geom-->  
+        <Geom type="box" render = "false">
+			<Extents>0.02425	0.02530	0.01780</Extents>
+        </Geom>  
         <Geom  type="trimesh">
             <data>miniHubo/forearm_lf_cog_shrinkwrap_1.wrl 1</data>
             <render>miniHubo/forearm_lf_cog_shrinkwrap_1.wrl 1</render> -->
@@ -97,7 +96,7 @@
             <inertia>0.015576	0	0	0	0.011951	0	0	0	0.019327</inertia> 
         </Mass>
     </Body>
-
+	<adjacent>lae laf</adjacent>
     <Joint name="lep" type="hinge" circular="true">
         <Body>lae</Body> 
         <Body>laf</Body> 
