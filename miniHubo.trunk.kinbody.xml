@@ -9,7 +9,7 @@
 		       <Extents>0.06485	0.053175	0.028</Extents> 
 		</Geom> 
         <Geom modifiable="false" type="trimesh">
-            <data>miniHubo/chest_cog_shrinkwrap_1.wrl 1</data>
+            <!--data>miniHubo/chest_cog_shrinkwrap_1.wrl 1</data-->
             <render>miniHubo/chest_cog_shrinkwrap_1.wrl 1</render> 
         </Geom> 
         <Mass type="box"> 
@@ -24,7 +24,7 @@
 		       <Extents>0.0557	0.027925	0.03155</Extents> 
 		</Geom>
         <Geom  modifiable="false" type="trimesh">
-            <data>miniHubo/waist_cog_shrinkwrap_1.wrl 1</data>
+            <!--data>miniHubo/waist_cog_shrinkwrap_1.wrl 1</data-->
             <render>miniHubo/waist_cog_shrinkwrap_1.wrl 1</render>
         </Geom> 
         <Mass type="box"> 

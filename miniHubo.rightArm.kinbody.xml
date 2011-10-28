@@ -12,7 +12,7 @@
         	<Extents>0.01700	0.01250	0.02200</Extents>
     	</Geom>
         <Geom modifiable="false" type="trimesh">
-            <data>miniHubo/shoulder_rt_cog_shrinkwrap_1.wrl 1</data>
+            <!--data>miniHubo/shoulder_rt_cog_shrinkwrap_1.wrl 1</data-->
             <render>miniHubo/shoulder_rt_cog_shrinkwrap_1.wrl 1</render> 
         </Geom> 
         <Mass type="box"> 
@@ -35,7 +35,7 @@
         	<Extents>0.01780	0.04983	0.03063</Extents>
     	</Geom>
 		<Geom modifiable="false" type="trimesh">
-		    <data>miniHubo/bicep_cog_shrinkwrap_1.wrl 1</data>
+		    <!--data>miniHubo/bicep_cog_shrinkwrap_1.wrl 1</data-->
 		    <render>miniHubo/bicep_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom>
 		<Mass type="box"> 
@@ -58,7 +58,7 @@
         	<Extents>0.02200	0.01700	0.01250</Extents>
     	</Geom>	
 		<Geom modifiable="false" type="trimesh">
-		    <data>miniHubo/elbow_cog_shrinkwrap_1.wrl 1</data>
+		    <!--data>miniHubo/elbow_cog_shrinkwrap_1.wrl 1</data-->
 		    <render>miniHubo/elbow_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
 		<Mass type="box"> 
@@ -81,7 +81,7 @@
         	<Extents>0.02425	0.02530	0.01780</Extents>
     	</Geom>		
 		<Geom modifiable="false" type="trimesh">
-		    <data>miniHubo/forearm_rt_cog_shrinkwrap_1.wrl 1</data>
+		    <!--data>miniHubo/forearm_rt_cog_shrinkwrap_1.wrl 1</data-->
 		    <render>miniHubo/forearm_rt_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
 		<Mass type="box"> 
