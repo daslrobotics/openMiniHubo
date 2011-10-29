@@ -51,7 +51,7 @@
         <Body>lab</Body> 
         <offsetfrom>lab</offsetfrom> 	
         <Anchor>0.000000	0.037825	0.000000</Anchor>
-        <axis>0 0 1</axis>
+        <axis>0 0 -1</axis>
     </Joint>
     
     <Body name="lae" type="dynamic">

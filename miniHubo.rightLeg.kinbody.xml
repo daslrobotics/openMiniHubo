@@ -12,7 +12,7 @@
 		<Geom type="box" render = "false">
 		       <Extents>0.0125	0.0195	0.04325</Extents>
 		</Geom> 
-		<Geom modifiable="false" type="trimesh">
+		<Geom type="trimesh">
 			<!--data>../models/miniHubo/hip_yaw_cog_shrinkwrap_1.wrl 1</data-->
 			<render>../models/miniHubo/hip_yaw_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
@@ -35,7 +35,7 @@
 		<Geom type="box" render = "false">
 		       <Extents>0.02425	0.0253	0.04525</Extents>
 		</Geom> 
-		<Geom modifiable="false" type="trimesh">
+		<Geom type="trimesh">
 			<!--data>../models/miniHubo/hippr_rt_cog_shrinkwrap_1.wrl 1</data-->
 			<render>../models/miniHubo/hippr_rt_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
@@ -58,7 +58,7 @@
 		<Geom type="box" render = "false">
 		       <Extents>0.022	0.051	0.024</Extents>
 		</Geom> 
-		<Geom modifiable="false" type="trimesh">
+		<Geom type="trimesh">
 			<!--data>../models/miniHubo/thigh_cog_shrinkwrap_1.wrl 1</data-->
 			<render>../models/miniHubo/thigh_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
@@ -82,7 +82,7 @@
 		<Geom type="box" render = "false">
 		       <Extents>0.02425	0.0569185	0.026769</Extents>
 		</Geom> 
-		<Geom modifiable="false" type="trimesh">
+		<Geom type="trimesh">
 			<!--data>../models/miniHubo/shin_rt_cog_shrinkwrap_1.wrl 1</data-->
 			<render>../models/miniHubo/shin_rt_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
@@ -97,7 +97,7 @@
 		    <Body>rls</Body> 
 		    <offsetfrom>rls</offsetfrom> 
 		    <Anchor>0.000000	0.039119	-0.014769</Anchor>
-		    <axis>-1 0 0</axis>
+		    <axis>1 0 0</axis>
 	</Joint>
 	<Body name="rlapr">
 		<offsetfrom>rls</offsetfrom>
@@ -105,7 +105,7 @@
 		<Geom type="box" render = "false">
 		       <Extents>0.02425	0.0253	0.04525</Extents>
 		</Geom> 
-		<Geom modifiable="false" type="trimesh">
+		<Geom type="trimesh">
 			<!--data>../models/miniHubo/anklepr_rt_cog_shrinkwrap_1.wrl 1</data-->
 			<render>../models/miniHubo/anklepr_rt_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
@@ -120,7 +120,7 @@
 		    <Body>rlapr</Body> 
 		    <offsetfrom>rlapr</offsetfrom> 	
 		    <Anchor>0.000000	-0.013300	0.017400 </Anchor>
-		    <axis>1 0 0</axis>
+		    <axis>-1 0 0</axis>
 	</Joint>
 	<Body name="rlf">
 		<offsetfrom>rlapr</offsetfrom>
@@ -128,7 +128,7 @@
 		<Geom type="box" render = "false">
 		       <Extents>0.032	0.0205	0.055</Extents>
 		</Geom> 
-		<Geom modifiable="false" type="trimesh">
+		<Geom type="trimesh">
 			<!--data>../models/miniHubo/foot_cog_shrinkwrap_1.wrl 1</data-->
 			<render>../models/miniHubo/foot_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
@@ -143,6 +143,6 @@
 	    <Body>rlf</Body> 
 	    <offsetfrom>rlf</offsetfrom> 	
 	    <Anchor> 0.000000	0.013500	0.000000</Anchor>
-	    <axis>0 0 -1</axis>
+	    <axis>0 0 1</axis>
 	</Joint>
 </KinBody>
