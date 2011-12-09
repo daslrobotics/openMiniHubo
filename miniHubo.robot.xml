@@ -1,50 +1,61 @@
 <Robot name="miniHubo" >
     <KinBody file="miniHubo.trunk.kinbody.xml" >
-        <KinBody file="miniHubo.rightLeg.kinbody.xml"/>
-        <Joint name="rightHipYawDummy" type = "hinge" enable="false">
-            <Body>waist</Body>
-            <Body>hipDummyRight</Body>
-            <limits>0 0</limits>
-        </Joint>
-        <KinBody file="miniHubo.leftLeg.kinbody.xml"/>
-        <Joint name="leftHipYawDummy" type = "hinge" enable="false">
-            <Body>waist</Body>
-            <Body>hipDummyLeft</Body>
-            <limits>0 0</limits>
-        </Joint>
-        <KinBody file="miniHubo.rightArm.kinbody.xml"/>
+        <KinBody file="miniHubo.leftArm.kinbody.xml"/>
+
         <Joint name="rightTorsoDummy" type = "hinge" enable="false">
             <Body>chest</Body>
             <Body>Torso_dummy2</Body>
             <limits>0 0</limits>
         </Joint>
-        <KinBody file="miniHubo.leftArm.kinbody.xml"/>
+
+        <KinBody file="miniHubo.rightArm.kinbody.xml"/>
+
         <Joint name="leftTorsoDummy" type = "hinge" enable="false">
             <Body>chest</Body>
             <Body>Torso_dummy1</Body>
             <limits>0 0</limits>
         </Joint>
+
+        <KinBody file="miniHubo.leftLeg.kinbody.xml"/>
+
+        <Joint name="leftHipYawDummy" type = "hinge" enable="false">
+            <Body>waist</Body>
+            <Body>hipDummyLeft</Body>
+            <limits>0 0</limits>
+        </Joint>
+
+        <KinBody file="miniHubo.rightLeg.kinbody.xml"/>
+
+        <Joint name="rightHipYawDummy" type = "hinge" enable="false">
+            <Body>waist</Body>
+            <Body>hipDummyRight</Body>
+            <limits>0 0</limits>
+        </Joint>
+
     </KinBody>
 
-  <Manipulator name="rightArmManip">
-        <base>chest</base>
-        <effector>raf</effector>
-        <direction>-1 -1 -1</direction>
-    </Manipulator>
     <Manipulator name="leftArmManip">
         <base>chest</base>
-        <effector>laf</effector>
-        <direction>1 -1 -1</direction>
+        <effector>lPalm</effector>
+        <direction>-1 0 0</direction>
     </Manipulator>
+
+    <Manipulator name="rightArmManip">
+        <base>chest</base>
+        <effector>rPalm</effector>
+        <direction>1 0 0</direction>
+    </Manipulator>
+
+    <Manipulator name="leftLeg">
+        <base>chest</base>
+        <effector>llf</effector>
+        <direction>0 -1 0</direction>
+    </Manipulator>
+
     <Manipulator name="rightLeg">
         <base>waist</base>
         <effector>rlf</effector>
-        <direction>0 0 -1</direction>
-    </Manipulator>
-    <Manipulator name="leftLeg">
-        <base>waist</base>
-        <effector>llf</effector>
-        <direction>0 0 -1</direction>
+        <direction>0 -1 0</direction>
     </Manipulator>
 
- </Robot>
+</Robot>
