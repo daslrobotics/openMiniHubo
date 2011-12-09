@@ -81,7 +81,7 @@
         	<Extents>0.02425	0.02530	0.01780</Extents>
     	</Geom>		
 		<Geom type="trimesh">
-		    <!--data>miniHubo/forearm_rt_cog_shrinkwrap_1.wrl 1</data-->
+		    <!--data>miniHubo/forearm_rt_cog_shrinkwrap_1.wrl 1</data> -->
 		    <render>miniHubo/forearm_rt_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
 		<Mass type="box"> 

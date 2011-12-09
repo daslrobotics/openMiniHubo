@@ -89,7 +89,7 @@
         <Geom  type="trimesh">
             <!--data>miniHubo/forearm_lf_cog_shrinkwrap_1.wrl 1</data-->
             <render>miniHubo/forearm_lf_cog_shrinkwrap_1.wrl 1</render> 
-        </Geom> 
+        </Geom> -
         <Mass type="box"> 
             <total>0.065</total>
 

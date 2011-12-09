@@ -25,4 +25,26 @@
             <limits>0 0</limits>
         </Joint>
     </KinBody>
+
+  <Manipulator name="rightArmManip">
+        <base>chest</base>
+        <effector>raf</effector>
+        <direction>-1 -1 -1</direction>
+    </Manipulator>
+    <Manipulator name="leftArmManip">
+        <base>chest</base>
+        <effector>laf</effector>
+        <direction>1 -1 -1</direction>
+    </Manipulator>
+    <Manipulator name="rightLeg">
+        <base>waist</base>
+        <effector>rlf</effector>
+        <direction>0 0 -1</direction>
+    </Manipulator>
+    <Manipulator name="leftLeg">
+        <base>waist</base>
+        <effector>llf</effector>
+        <direction>0 0 -1</direction>
+    </Manipulator>
+
  </Robot>
