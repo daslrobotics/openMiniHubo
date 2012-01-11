@@ -6,6 +6,7 @@
 <modelsdir>models</modelsdir>
     <Body name="chest" type="dynamic">
         <Geom type="trimesh" render ="true">
+            <data>dummyBox.wrl 0.001</data>
             <Render>miniHubo/chest_cog_shrinkwrap_1.wrl 1</Render> 
         </Geom> 
         <Geom type="box" render="false">
@@ -20,6 +21,7 @@
     	<offsetfrom>chest</offsetfrom>
     	<Translation>-0.000000	-0.076600	-0.016550</Translation>
         <Geom  type="trimesh" render="true">
+            <data>dummyBox.wrl 0.001</data>
             <render>miniHubo/waist_cog_shrinkwrap_1.wrl 1</render>
         </Geom> 
     	<Geom type="box" render = "false">

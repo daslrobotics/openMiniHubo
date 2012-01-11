@@ -13,7 +13,7 @@
            	<Extents>0.0125	0.0195	0.04325</Extents> 
         </Geom>
 		<Geom  type="trimesh">
-		    <!--data>miniHubo/hip_yaw_cog_shrinkwrap_1.wrl 1</data-->
+            <data>dummyBox.wrl 0.0002</data>
 		    <render>miniHubo/hip_yaw_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
 		<Mass type="box"> 
@@ -36,7 +36,7 @@
            	<Extents>0.02425	0.0253	0.04525</Extents>
         </Geom>
 		<Geom  type="trimesh">
-		    <!--data>miniHubo/hippr_lf_cog_shrinkwrap_1.wrl 1</data-->
+            <data>dummyBox.wrl 0.0002</data>
 		    <render>miniHubo/hippr_lf_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom>
 		<Mass type="box"> 
@@ -59,7 +59,7 @@
            	<Extents>0.022	0.051	0.024</Extents>
         </Geom> 
 		<Geom  type="trimesh">
-		    <!--data>miniHubo/thigh_cog_shrinkwrap_1.wrl 1</data-->
+            <data>dummyBox.wrl 0.0002</data>
 		    <render>miniHubo/thigh_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
 		<Mass type="box"> 
@@ -82,7 +82,7 @@
            	<Extents>0.02425	0.0569185	0.026769</Extents>
         </Geom>
 		<Geom  type="trimesh">
-		    <!--data>miniHubo/shin_lf_cog_shrinkwrap_1.wrl 1</data-->
+            <data>dummyBox.wrl 0.0002</data>
 		    <render>miniHubo/shin_lf_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
 		<Mass type="box"> 
@@ -105,7 +105,7 @@
            	<Extents>0.02425	0.0253	0.04525</Extents>
         </Geom>
 		<Geom  type="trimesh">
-		    <!--data>miniHubo/anklepr_lf_cog_shrinkwrap_1.wrl 1</data-->
+            <data>dummyBox.wrl 0.0002</data>
 		    <render>miniHubo/anklepr_lf_cog_shrinkwrap_1.wrl 1</render> 
 		</Geom> 
 		<Mass type="box"> 
@@ -128,7 +128,7 @@
         	<Extents>0.032	0.0205	0.055</Extents>
         </Geom> 
 		<Geom  type="trimesh">
-		    <!--data>miniHubo/foot_cog_shrinkwrap_1.wrl 1</data-->
+            <data>dummyBox.wrl 0.0002</data>
 		    <render>miniHubo/foot_cog_shrinkwrap_1.wrl 1</render>
 		</Geom> 
 		<Mass type="box"> 
